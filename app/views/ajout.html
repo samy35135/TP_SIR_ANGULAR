@@ -1,11 +1,13 @@
+  <h3>Insérer une nouvelle personne</h3>
+  <p>Attention, l'email doit être valide pour être envoyé</p>
   <form novalidate class="simple-form">
     Nom : <input type="text" ng-model="person.nom" /><br />
     Prénom : <input type="text" ng-model="person.prenom" /><br />
-    E-mail: <input type="email" ng-model="person.adressmail" /><br />
-    Sexe: <input type="radio" ng-model="person.sexe" value="M" />Masculin
+    E-mail : <input type="email" ng-model="person.adressmail" /><br />
+    Sexe : <input type="radio" ng-model="person.sexe" value="M" />Masculin
     <input type="radio" ng-model="person.sexe" value="F" />Féminin<br />
-    <input type="button" ng-click="reset()" value="Reset" />
-    <input type="submit" ng-click="update(person)" value="Save" />
+    <input type="submit" ng-click="update(person)" value="Enregistrer" />
   </form>
-  <pre>form = {{person | json}}</pre>
-  <pre>master = {{master | json}}</pre>
+  <pre>form = {{ person | json }}</pre>
+
+  <pre> {{ reponse }}</pre>
